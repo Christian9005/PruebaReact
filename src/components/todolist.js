@@ -25,7 +25,7 @@ export const ToDoList=()=>{
             "id_author": 14,
             "finish_at": "2022-06-03T21:47:23.000Z"
         };
-        clientHttp.post({url:`/?id_author=14`,data:body})
+        clientHttp.post(`/?id_author=14`,body)
         .then((response)=>{
             console.log(response.data);
             setPost(response.data)
